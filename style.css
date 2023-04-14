@@ -9,7 +9,7 @@ html{
 
 body{
     display: grid;
-    grid-template: 1fr 5fr / 1fr 4fr;
+    grid-template: 150px auto / 1fr 4fr;
     height: 100vh;
 }
 
@@ -59,9 +59,23 @@ h4 {
     margin: 0%;
 }
 
-.content > * > .card {
+.content > .announcements > .card,
+.content > .trending > .card {
     height: 90%;
     margin-top: 1rem;
+    background-color: #F9F7F7;
+    border-radius: 8px;
+}
+
+.projects .grid-container {
+    display: grid;
+    grid-template: 185px / 1fr 1fr;
+    gap: 20px;
+    grid-auto-rows: 185px;
+    margin-top: 1rem;
+}
+
+.projects .card {
     background-color: #F9F7F7;
     border-radius: 8px;
 }
