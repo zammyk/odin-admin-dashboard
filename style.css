@@ -99,11 +99,22 @@ h4 {
 
 .content > .announcements > .card,
 .content > .trending > .card {
-    height: 80%;
+    height: 75%;
     margin-top: 1rem;
     background-color: #F9F7F7;
     border-radius: 8px;
-    padding: 1rem;
+    padding: 1.25rem 1rem 1.25rem;
+}
+
+.content > .announcements > .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.announcements .card .line{
+    background-color: black;
+    width: 100%;
+    min-height: 1px;
 }
 
 .projects .grid-container {
