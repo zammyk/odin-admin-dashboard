@@ -40,8 +40,11 @@ body{
     gap: 10px;
 }
 
-.dashboard img{
+img{
     height: 20px;
+}
+
+.dashboard img{
     margin-left: 20px;
     margin-right: 20px;
     filter: invert(100%) sepia(0%) saturate(437%) hue-rotate(336deg) brightness(114%) contrast(94%);
@@ -57,6 +60,7 @@ body{
     grid-row: 1 / 2;
     grid-column: 2 / 3;
     background-color: #F9F7F7;
+    padding-right: 2rem;
 }
 
 .content {
@@ -112,4 +116,29 @@ h4 {
 .projects .card {
     background-color: #F9F7F7;
     border-radius: 8px;
+}
+
+.header .top-section {
+    display: flex;
+    padding: 0.75rem 2rem 1rem;
+    align-items: center;
+}
+
+.header input[type="search"] {
+    background-color: #DBE2EF;
+    border-style: none;
+    border-radius: 9999px;
+    width: max(100px,55%);
+    height: 1.5rem;
+}
+
+.top-section .profile-pic {
+    height: 40px;
+}
+
+.top-section > *:nth-child(3){
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    gap:30px;
 }
