@@ -118,9 +118,11 @@ h4 {
     border-radius: 8px;
 }
 
-.header .top-section {
+.header .top-section,
+.header .bottom-section
+ {
     display: flex;
-    padding: 0.75rem 2rem 1rem;
+    padding: 0.75rem 2rem 0.5rem;
     align-items: center;
 }
 
@@ -136,9 +138,33 @@ h4 {
     height: 40px;
 }
 
-.top-section > *:nth-child(3){
+.bottom-section .profile-pic{
+    height: 60px;
+}
+
+.top-section > *:nth-child(3),
+.bottom-section > *:nth-child(3)
+{
     display: flex;
     align-items: center;
     margin-left: auto;
-    gap:30px;
+    gap:2rem;
+}
+
+#greetings {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap:0.25rem;
+}
+
+.bottom-section button{
+    background-color: #61a0e8;
+    border-style: none;
+    border-radius: 9999px;
+    width: 80px;
+    height: 2rem;
+    color: white;
+    font-weight: bold;
 }
