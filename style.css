@@ -104,17 +104,29 @@ h4 {
     background-color: #F9F7F7;
     border-radius: 8px;
     padding: 1.25rem 1rem 1.25rem;
-}
-
-.content > .announcements > .card{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
+
 .announcements .card .line{
     background-color: black;
     width: 100%;
     min-height: 1px;
+}
+
+.trending .card .profile-pic{
+    height: 40px;
+}
+
+.trending .card > div {
+    display: flex;
+    align-items: center;
+}
+
+.trending .card > div > div {
+    display: flex;
+    flex-direction: column;
 }
 
 .projects .grid-container {
